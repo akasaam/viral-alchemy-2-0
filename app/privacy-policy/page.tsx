@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold tracking-tight">Introduction</h2>
                 <p className="text-muted-foreground">
-                  Viral Alchemy ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
+                  The Brand Counter ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
                   explains how we collect, use, disclose, and safeguard your information when you visit our website or
                   use our services.
                 </p>
@@ -235,7 +235,7 @@ export default function PrivacyPolicy() {
                   If you have questions or comments about this Privacy Policy, please contact us at:
                 </p>
                 <p className="text-muted-foreground">
-                  Viral Alchemy
+                  The Brand Counter
                   <br />
                   KholaChand Fapri, Bypass Road
                   <br />

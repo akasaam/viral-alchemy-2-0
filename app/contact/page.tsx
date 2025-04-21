@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
                 <WhatsAppButton
                   phoneNumber="+917501411769"
-                  message="Hello, I'd like to discuss working with Viral Alchemy!"
+                  message="Hello, I'd like to discuss working with The Brand Counter!"
                   className="w-full md:w-auto"
                 />
                 <div className="mt-6 p-4 border rounded-lg bg-muted/30">

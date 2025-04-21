@@ -49,7 +49,7 @@ export default function Home() {
             <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
               <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">VA</div>
             </div>
-            <span className="text-xl font-bold">Viral Alchemy</span>
+            <span className="text-xl font-bold">The Brand Counter</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <ServicesDropdown />
@@ -526,11 +526,11 @@ export default function Home() {
                     About Us
                   </div>
                   <TextReveal
-                    text="The Viral Alchemy Story"
+                    text="The The Brand Counter Story"
                     className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                   />
                   <p className="text-muted-foreground md:text-xl">
-                    Founded in 2018, Viral Alchemy was born from a passion for helping brands navigate the ever-evolving
+                    Founded in 2018, The Brand Counter was born from a passion for helping brands navigate the ever-evolving
                     digital landscape.
                   </p>
                 </div>
@@ -578,7 +578,7 @@ export default function Home() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  The creative minds and strategic thinkers behind Viral Alchemy.
+                  The creative minds and strategic thinkers behind The Brand Counter.
                 </p>
               </div>
               <Button variant="outline" className="mt-4" asChild>
@@ -692,7 +692,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <WhatsAppButton
                     phoneNumber="+917501411769"
-                    message="Hello, I'd like to discuss working with Viral Alchemy!"
+                    message="Hello, I'd like to discuss working with The Brand Counter!"
                     className="w-full md:w-auto"
                   />
                   <Button variant="outline" asChild>
@@ -789,7 +789,7 @@ export default function Home() {
               <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">VA</div>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Viral Alchemy. All rights reserved.
+              © {new Date().getFullYear()} The Brand Counter. All rights reserved.
             </p>
           </div>
           <nav className="flex gap-4 sm:gap-6">

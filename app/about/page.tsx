@@ -23,11 +23,11 @@ export default function About() {
                     About Us
                   </div>
                   <TextReveal
-                    text="The Viral Alchemy Story"
+                    text="The The Brand Counter Story"
                     className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                   />
                   <p className="text-muted-foreground md:text-xl">
-                    Founded in 2018, Viral Alchemy was born from a passion for helping brands navigate the ever-evolving
+                    Founded in 2018, The Brand Counter was born from a passion for helping brands navigate the ever-evolving
                     digital landscape.
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export default function About() {
                   </Button>
                   <WhatsAppButton
                     phoneNumber="+917501411769"
-                    message="Hello, I'd like to learn more about Viral Alchemy's services!"
+                    message="Hello, I'd like to learn more about The Brand Counter's services!"
                   />
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function About() {
             <div className="mx-auto max-w-3xl py-12">
               <div className="space-y-6 text-center">
                 <p className="text-lg">
-                  At Viral Alchemy, we believe that exceptional digital marketing is both an art and a science. It
+                  At The Brand Counter, we believe that exceptional digital marketing is both an art and a science. It
                   requires creativity, strategic thinking, and data-driven decision making.
                 </p>
                 <p className="text-lg">
@@ -224,7 +224,7 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  The creative minds and strategic thinkers behind Viral Alchemy.
+                  The creative minds and strategic thinkers behind The Brand Counter.
                 </p>
               </div>
             </div>

@@ -123,7 +123,7 @@ export default function JoinOurTeam() {
                   Why Join Us
                 </div>
                 <TextReveal
-                  text="What Makes Viral Alchemy Special"
+                  text="What Makes The Brand Counter Special"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
@@ -428,7 +428,7 @@ export default function JoinOurTeam() {
                 <CardHeader>
                   <CardTitle>General Application</CardTitle>
                   <CardDescription>
-                    Tell us about yourself and why you'd be a great fit for Viral Alchemy.
+                    Tell us about yourself and why you'd be a great fit for The Brand Counter.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -490,7 +490,7 @@ export default function JoinOurTeam() {
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="message" className="text-sm font-medium leading-none">
-                        Why do you want to join Viral Alchemy?
+                        Why do you want to join The Brand Counter?
                       </label>
                       <Textarea
                         id="message"

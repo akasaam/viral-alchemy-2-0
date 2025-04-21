@@ -29,7 +29,7 @@ export default function TermsOfService() {
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold tracking-tight">Agreement to Terms</h2>
                 <p className="text-muted-foreground">
-                  These Terms of Service constitute a legally binding agreement made between you and Viral Alchemy
+                  These Terms of Service constitute a legally binding agreement made between you and The Brand Counter
                   ("we," "us," or "our"), concerning your access to and use of our website and services.
                 </p>
                 <p className="text-muted-foreground">
@@ -146,7 +146,7 @@ export default function TermsOfService() {
                   If you have questions or comments about these Terms of Service, please contact us at:
                 </p>
                 <p className="text-muted-foreground">
-                  Viral Alchemy
+                  The Brand Counter
                   <br />
                   KholaChand Fapri, Bypass Road
                   <br />
