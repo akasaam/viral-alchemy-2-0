@@ -1,10 +1,10 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { TextReveal } from "@/components/text-reveal"
-import { MovingBorder } from "@/components/moving-border"
-import { WhatsAppButton } from "@/components/whatsapp-button"
-import { BackButton } from "@/components/back-button"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { TextReveal } from "@/components/text-reveal";
+import { MovingBorder } from "@/components/moving-border";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+import { BackButton } from "@/components/back-button";
 
 export default function About() {
   return (
@@ -23,23 +23,26 @@ export default function About() {
                     About Us
                   </div>
                   <TextReveal
-                    text="The The Brand Counter Story"
+                    text="The viral alchemy Story"
                     className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                   />
                   <p className="text-muted-foreground md:text-xl">
-                    Founded in 2018, The Brand Counter was born from a passion for helping brands navigate the ever-evolving
-                    digital landscape.
+                    Founded in 2018, viral alchemy was born from a passion for
+                    helping brands navigate the ever-evolving digital landscape.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Our team of digital marketing experts combines creativity with data-driven strategies to deliver
-                    exceptional results for our clients. We believe in transparency, collaboration, and continuous
-                    innovation.
+                    Our team of digital marketing experts combines creativity
+                    with data-driven strategies to deliver exceptional results
+                    for our clients. We believe in transparency, collaboration,
+                    and continuous innovation.
                   </p>
                   <p className="text-muted-foreground">
-                    What sets us apart is our commitment to understanding your business goals and crafting tailored
-                    solutions that drive real growth. We don't just execute campaigns; we build lasting partnerships.
+                    What sets us apart is our commitment to understanding your
+                    business goals and crafting tailored solutions that drive
+                    real growth. We don't just execute campaigns; we build
+                    lasting partnerships.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -48,7 +51,7 @@ export default function About() {
                   </Button>
                   <WhatsAppButton
                     phoneNumber="+917501411769"
-                    message="Hello, I'd like to learn more about The Brand Counter's services!"
+                    message="Hello, I'd like to learn more about viral alchemy's services!"
                   />
                 </div>
               </div>
@@ -79,24 +82,30 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  We're on a mission to help brands stand out in the crowded digital landscape through strategic
-                  marketing alchemy.
+                  We're on a mission to help brands stand out in the crowded
+                  digital landscape through strategic marketing alchemy.
                 </p>
               </div>
             </div>
             <div className="mx-auto max-w-3xl py-12">
               <div className="space-y-6 text-center">
                 <p className="text-lg">
-                  At The Brand Counter, we believe that exceptional digital marketing is both an art and a science. It
-                  requires creativity, strategic thinking, and data-driven decision making.
+                  At viral alchemy, we believe that exceptional digital
+                  marketing is both an art and a science. It requires
+                  creativity, strategic thinking, and data-driven decision
+                  making.
                 </p>
                 <p className="text-lg">
-                  Our mission is to transform ordinary brands into extraordinary digital experiences by combining these
-                  elements in perfect harmony - just like alchemists of old transformed base metals into gold.
+                  Our mission is to transform ordinary brands into extraordinary
+                  digital experiences by combining these elements in perfect
+                  harmony - just like alchemists of old transformed base metals
+                  into gold.
                 </p>
                 <p className="text-lg">
-                  We're committed to staying at the forefront of digital marketing trends and technologies, continuously
-                  evolving our strategies to help our clients achieve remarkable results in an ever-changing landscape.
+                  We're committed to staying at the forefront of digital
+                  marketing trends and technologies, continuously evolving our
+                  strategies to help our clients achieve remarkable results in
+                  an ever-changing landscape.
                 </p>
               </div>
             </div>
@@ -115,7 +124,8 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  Our core values guide everything we do and shape our company culture.
+                  Our core values guide everything we do and shape our company
+                  culture.
                 </p>
               </div>
             </div>
@@ -139,7 +149,8 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold tracking-wide">Innovation</h3>
                 <p className="text-muted-foreground">
-                  We embrace new ideas and technologies to stay ahead of the curve.
+                  We embrace new ideas and technologies to stay ahead of the
+                  curve.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
@@ -162,7 +173,8 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold tracking-wide">Integrity</h3>
                 <p className="text-muted-foreground">
-                  We operate with honesty, transparency, and ethical standards in all we do.
+                  We operate with honesty, transparency, and ethical standards
+                  in all we do.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
@@ -185,8 +197,12 @@ export default function About() {
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Collaboration</h3>
-                <p className="text-muted-foreground">We believe in the power of teamwork and diverse perspectives.</p>
+                <h3 className="text-xl font-bold tracking-wide">
+                  Collaboration
+                </h3>
+                <p className="text-muted-foreground">
+                  We believe in the power of teamwork and diverse perspectives.
+                </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
@@ -206,7 +222,9 @@ export default function About() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold tracking-wide">Excellence</h3>
-                <p className="text-muted-foreground">We strive for the highest quality in everything we deliver.</p>
+                <p className="text-muted-foreground">
+                  We strive for the highest quality in everything we deliver.
+                </p>
               </div>
             </div>
           </div>
@@ -224,7 +242,8 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  The creative minds and strategic thinkers behind The Brand Counter.
+                  The creative minds and strategic thinkers behind viral
+                  alchemy.
                 </p>
               </div>
             </div>
@@ -256,7 +275,9 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <h3 className="font-bold">Michael Chen</h3>
-                  <p className="text-sm text-muted-foreground">Creative Director</p>
+                  <p className="text-sm text-muted-foreground">
+                    Creative Director
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -271,7 +292,9 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <h3 className="font-bold">Olivia Rodriguez</h3>
-                  <p className="text-sm text-muted-foreground">SEO Specialist</p>
+                  <p className="text-sm text-muted-foreground">
+                    SEO Specialist
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -286,7 +309,9 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <h3 className="font-bold">David Kim</h3>
-                  <p className="text-sm text-muted-foreground">Social Media Manager</p>
+                  <p className="text-sm text-muted-foreground">
+                    Social Media Manager
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -301,7 +326,9 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <h3 className="font-bold">Emma Wilson</h3>
-                  <p className="text-sm text-muted-foreground">Content Strategist</p>
+                  <p className="text-sm text-muted-foreground">
+                    Content Strategist
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -331,7 +358,9 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <h3 className="font-bold">Sophia Garcia</h3>
-                  <p className="text-sm text-muted-foreground">PPC Specialist</p>
+                  <p className="text-sm text-muted-foreground">
+                    PPC Specialist
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -365,7 +394,8 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  We're always looking for talented individuals to join our growing team.
+                  We're always looking for talented individuals to join our
+                  growing team.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row mt-6">
@@ -385,6 +415,5 @@ export default function About() {
         </section>
       </main>
     </div>
-  )
+  );
 }
-

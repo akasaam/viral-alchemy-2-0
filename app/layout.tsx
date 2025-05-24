@@ -1,24 +1,25 @@
-import type React from "react"
-import "./globals.css"
-import { Outfit } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import LoadingScreen from "@/components/loading-screen"
-import InquiryPopup from "@/components/inquiry-popup"
-import { CacheConsent } from "@/components/cache-consent"
+import type React from "react";
+import "./globals.css";
+import { Outfit } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import LoadingScreen from "@/components/loading-screen";
+import InquiryPopup from "@/components/inquiry-popup";
+import { CacheConsent } from "@/components/cache-consent";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
-})
+});
 
 export const metadata = {
-  title: "The Brand Counter | Digital Marketing Agency",
+  title: "viral alchemy | Digital Marketing Agency",
   description:
     "Transform your digital presence with strategic marketing alchemy. We offer SEO, social media marketing, content creation, and website development services.",
-  keywords: "digital marketing, SEO, social media marketing, content marketing, website development, Siliguri, India",
-  authors: [{ name: "The Brand Counter", url: "https://viralalchemy.com" }],
-  creator: "The Brand Counter",
-  publisher: "The Brand Counter",
+  keywords:
+    "digital marketing, SEO, social media marketing, content marketing, website development, Siliguri, India",
+  authors: [{ name: "viral alchemy", url: "https://viralalchemy.com" }],
+  creator: "viral alchemy",
+  publisher: "viral alchemy",
   formatDetection: {
     email: false,
     address: false,
@@ -37,17 +38,17 @@ export const metadata = {
     apple: { url: "/favicon.svg", type: "image/svg+xml" },
   },
   openGraph: {
-    title: "The Brand Counter | Digital Marketing Agency",
+    title: "viral alchemy | Digital Marketing Agency",
     description:
       "Transform your digital presence with strategic marketing alchemy. We offer SEO, social media marketing, content creation, and website development services.",
     url: "https://viralalchemy.vercel.app",
-    siteName: "The Brand Counter",
+    siteName: "viral alchemy",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "The Brand Counter - Digital Marketing Agency",
+        alt: "viral alchemy - Digital Marketing Agency",
       },
     ],
     locale: "en_US",
@@ -55,7 +56,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Brand Counter | Digital Marketing Agency",
+    title: "viral alchemy | Digital Marketing Agency",
     description:
       "Transform your digital presence with strategic marketing alchemy. We offer SEO, social media marketing, content creation, and website development services.",
     images: ["/images/twitter-image.jpg"],
@@ -72,13 +73,13 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -87,17 +88,23 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${outfit.variable} font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <LoadingScreen />
           {children}
-          <InquiryPopup whatsappNumber="+917501411769" email="saambarlin@gmail.com" />
+          <InquiryPopup
+            whatsappNumber="+917501411769"
+            email="saambarlin@gmail.com"
+          />
           <CacheConsent />
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
 
-
-
-import './globals.css'
+import "./globals.css";
