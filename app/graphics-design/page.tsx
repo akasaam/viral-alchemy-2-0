@@ -4,14 +4,13 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, FileText, Mail, Video, Newspaper } from "lucide-react"
+import { CheckCircle, Palette, ImageIcon, FileText, Zap } from "lucide-react"
 import { TextReveal } from "@/components/text-reveal"
 import { MovingBorder } from "@/components/moving-border"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { BackButton } from "@/components/back-button"
-import { CardWithTruncate } from "@/components/card-with-truncate"
 
-export default function ContentMarketing() {
+export default function GraphicsDesign() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
@@ -25,11 +24,12 @@ export default function ContentMarketing() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <TextReveal
-                    text="Content Marketing"
+                    text="Graphics Design"
                     className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none tracking-wide"
                   />
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Tell your brand story and establish authority with compelling content that converts.
+                    Create stunning visual content that captures attention and communicates your brand message
+                    effectively.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -42,17 +42,17 @@ export default function ContentMarketing() {
                   </Button>
                   <WhatsAppButton
                     phoneNumber="+917501411769"
-                    message="Hello, I'm interested in your content marketing services!"
+                    message="Hello, I'm interested in your graphics design services!"
                   />
                 </div>
               </div>
               <div className="flex items-center justify-center">
                 <MovingBorder className="p-1">
                   <Image
-                    src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2064&auto=format&fit=crop"
                     width={550}
                     height={550}
-                    alt="Content Marketing"
+                    alt="Graphics Design"
                     className="rounded-lg object-cover"
                     priority
                   />
@@ -67,139 +67,170 @@ export default function ContentMarketing() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Our Approach
+                  Our Services
                 </div>
                 <TextReveal
-                  text="Strategic Content Creation"
+                  text="Creative Design Solutions"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  We create compelling content that engages your audience, builds your brand authority, and drives
-                  conversions.
+                  We create compelling visual designs that help your brand stand out and connect with your audience.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-1xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
-              <CardWithTruncate className="h-[400px] w-[300px] hover:bg-gray-200/15 flex flex-col w-full ">
+              <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
+                <CardHeader className="pb-4">
+                  <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Palette className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Brand Identity</CardTitle>
+                  <CardDescription>
+                    Complete brand identity design including logos, color schemes, and brand guidelines.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <ul className="grid gap-2">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Logo Design</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Brand Guidelines</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Color Palette</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Typography</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Brand Assets</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Style Guide</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
+                <CardHeader className="pb-4">
+                  <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <ImageIcon className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Social Media Graphics</CardTitle>
+                  <CardDescription>
+                    Eye-catching graphics designed specifically for social media platforms.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <ul className="grid gap-2">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Instagram Posts</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Facebook Covers</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Story Templates</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Ad Creatives</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Profile Graphics</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Carousel Designs</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
                 <CardHeader className="pb-4">
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <FileText className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Blog Writing</CardTitle>
-                  <CardDescription>
-                    Engage your audience with informative and SEO-optimized blog content.
-                  </CardDescription>
+                  <CardTitle>Print Design</CardTitle>
+                  <CardDescription>Professional print materials that make a lasting impression.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Keyword Research</span>
+                      <span>Business Cards</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Topic Development</span>
+                      <span>Brochures</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>SEO Optimization</span>
+                      <span>Flyers</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Content Calendar</span>
+                      <span>Posters</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Banners</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Packaging Design</span>
                     </li>
                   </ul>
                 </CardContent>
-              </CardWithTruncate>
-              <CardWithTruncate className="h-[400px] w-[300px] hover:bg-gray-200/15 flex flex-col w-full">
+              </Card>
+              <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
                 <CardHeader className="pb-4">
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-primary" />
+                    <Zap className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Email Campaigns</CardTitle>
-                  <CardDescription>Nurture leads and drive conversions with strategic email marketing.</CardDescription>
+                  <CardTitle>Digital Marketing</CardTitle>
+                  <CardDescription>Graphics designed to boost your digital marketing campaigns.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Campaign Strategy</span>
+                      <span>Web Banners</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Email Copywriting</span>
+                      <span>Email Headers</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>A/B Testing</span>
+                      <span>Infographics</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Performance Analysis</span>
+                      <span>Presentation Design</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Landing Page Graphics</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Display Ads</span>
                     </li>
                   </ul>
                 </CardContent>
-              </CardWithTruncate>
-              <CardWithTruncate className="h-[400px] w-[300px] hover:bg-gray-200/15 flex flex-col w-full">
-                <CardHeader className="pb-4">
-                  <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Video className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle>Video Production</CardTitle>
-                  <CardDescription>
-                    Engage your audience with compelling video content across platforms.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="grid gap-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Concept Development</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Scriptwriting</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Production</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Distribution Strategy</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </CardWithTruncate>
-              <CardWithTruncate className="h-[400px] w-[300px] hover:bg-gray-200/15 flex flex-col w-full">
-                <CardHeader className="pb-4">
-                  <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Newspaper className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle>Whitepapers & Guides</CardTitle>
-                  <CardDescription>Establish thought leadership with in-depth industry content.</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="grid gap-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Research & Analysis</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Content Development</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Design & Layout</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Lead Generation</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </CardWithTruncate>
+              </Card>
             </div>
           </div>
         </section>
@@ -212,12 +243,11 @@ export default function ContentMarketing() {
                   Our Process
                 </div>
                 <TextReveal
-                  text="How We Create Content That Converts"
+                  text="How We Create Stunning Designs"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Our proven content marketing process ensures your content resonates with your audience and drives
-                  results.
+                  Our proven design process ensures every project meets your vision and exceeds expectations.
                 </p>
               </div>
             </div>
@@ -226,36 +256,36 @@ export default function ContentMarketing() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   1
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Research</h3>
+                <h3 className="text-xl font-bold tracking-wide">Brief</h3>
                 <p className="text-muted-foreground">
-                  We analyze your audience, competitors, and industry trends to develop a content strategy.
+                  We understand your requirements, target audience, and design preferences.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   2
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Create</h3>
+                <h3 className="text-xl font-bold tracking-wide">Concept</h3>
                 <p className="text-muted-foreground">
-                  We develop engaging, SEO-optimized content that aligns with your brand voice and business goals.
+                  We develop creative concepts and present initial design directions for your approval.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   3
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Distribute</h3>
+                <h3 className="text-xl font-bold tracking-wide">Design</h3>
                 <p className="text-muted-foreground">
-                  We strategically distribute your content across relevant channels to maximize reach and engagement.
+                  We create the final designs with attention to detail and brand consistency.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   4
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Analyze</h3>
+                <h3 className="text-xl font-bold tracking-wide">Deliver</h3>
                 <p className="text-muted-foreground">
-                  We continuously monitor performance, providing detailed reports and optimizing for better results.
+                  We deliver high-quality files in all required formats for immediate use.
                 </p>
               </div>
             </div>
@@ -270,11 +300,11 @@ export default function ContentMarketing() {
                   Get Started
                 </div>
                 <TextReveal
-                  text="Ready to Tell Your Brand Story?"
+                  text="Ready to Elevate Your Visual Brand?"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Contact us today to discuss your content marketing needs and get a free consultation.
+                  Contact us today to discuss your design needs and get a free consultation.
                 </p>
               </div>
             </div>
@@ -314,7 +344,7 @@ export default function ContentMarketing() {
                       </label>
                       <Textarea
                         id="message"
-                        placeholder="Tell us about your content needs..."
+                        placeholder="Tell us about your design project..."
                         className="min-h-[120px]"
                       />
                     </div>
@@ -334,4 +364,3 @@ export default function ContentMarketing() {
     </div>
   )
 }
-

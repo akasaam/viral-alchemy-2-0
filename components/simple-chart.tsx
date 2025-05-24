@@ -112,4 +112,3 @@ export function SimpleChart({ title, data, dataKey, valueFormatter = (value) => 
     </Card>
   )
 }
-

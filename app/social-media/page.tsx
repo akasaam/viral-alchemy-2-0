@@ -10,7 +10,7 @@ import { MovingBorder } from "@/components/moving-border"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { BackButton } from "@/components/back-button"
 
-export default function SocialMediaMarketing() {
+export default function SocialMedia() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
@@ -24,11 +24,12 @@ export default function SocialMediaMarketing() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <TextReveal
-                    text="Social Media Marketing"
+                    text="Social Media Management"
                     className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none tracking-wide"
                   />
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Build your brand presence and engage your audience with strategic social media campaigns.
+                    Build your brand presence and engage your audience across all social platforms with strategic
+                    content and community management.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -41,7 +42,7 @@ export default function SocialMediaMarketing() {
                   </Button>
                   <WhatsAppButton
                     phoneNumber="+917501411769"
-                    message="Hello, I'm interested in your social media marketing services!"
+                    message="Hello, I'm interested in your social media services!"
                   />
                 </div>
               </div>
@@ -51,7 +52,7 @@ export default function SocialMediaMarketing() {
                     src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop"
                     width={550}
                     height={550}
-                    alt="Social Media Marketing"
+                    alt="Social Media Management"
                     className="rounded-lg object-cover"
                     priority
                   />
@@ -74,7 +75,7 @@ export default function SocialMediaMarketing() {
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
                   We create tailored social media strategies that align with your business goals and resonate with your
-                  target audience.
+                  target audience across all platforms.
                 </p>
               </div>
             </div>
@@ -84,7 +85,7 @@ export default function SocialMediaMarketing() {
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Instagram className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Instagram Marketing</CardTitle>
+                  <CardTitle>Instagram Management</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
@@ -94,15 +95,7 @@ export default function SocialMediaMarketing() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Influencer Partnerships</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
                       <span>Story & Reel Strategy</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Targeted Ads</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
@@ -110,7 +103,15 @@ export default function SocialMediaMarketing() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Analytics & Reporting</span>
+                      <span>Community Engagement</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Analytics & Insights</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary" />
+                      <span>Growth Strategies</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -120,7 +121,7 @@ export default function SocialMediaMarketing() {
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Facebook className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Facebook Marketing</CardTitle>
+                  <CardTitle>Facebook Management</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
@@ -130,7 +131,7 @@ export default function SocialMediaMarketing() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Ad Campaigns</span>
+                      <span>Content Scheduling</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
@@ -138,15 +139,15 @@ export default function SocialMediaMarketing() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Analytics & Reporting</span>
+                      <span>Event Promotion</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Custom Audiences</span>
+                      <span>Customer Support</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Conversion Optimization</span>
+                      <span>Performance Tracking</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -156,7 +157,7 @@ export default function SocialMediaMarketing() {
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Twitter className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Twitter Marketing</CardTitle>
+                  <CardTitle>Twitter Management</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
@@ -170,11 +171,11 @@ export default function SocialMediaMarketing() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Engagement Strategy</span>
+                      <span>Real-time Engagement</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Promoted Tweets</span>
+                      <span>Thread Creation</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
@@ -192,7 +193,7 @@ export default function SocialMediaMarketing() {
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Youtube className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>YouTube Marketing</CardTitle>
+                  <CardTitle>YouTube Management</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
@@ -210,7 +211,7 @@ export default function SocialMediaMarketing() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Ad Campaigns</span>
+                      <span>Thumbnail Design</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
@@ -239,7 +240,7 @@ export default function SocialMediaMarketing() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Our proven social media marketing process ensures your brand stands out in the crowded digital
+                  Our proven social media management process ensures your brand stands out in the crowded digital
                   landscape.
                 </p>
               </div>
@@ -249,7 +250,7 @@ export default function SocialMediaMarketing() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   1
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Research</h3>
+                <h3 className="text-xl font-bold tracking-wide">Strategy</h3>
                 <p className="text-muted-foreground">
                   We analyze your audience, competitors, and industry trends to develop a strategic plan.
                 </p>
@@ -276,7 +277,7 @@ export default function SocialMediaMarketing() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   4
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Analyze</h3>
+                <h3 className="text-xl font-bold tracking-wide">Optimize</h3>
                 <p className="text-muted-foreground">
                   We continuously monitor performance, providing detailed reports and optimizing for better results.
                 </p>
@@ -297,7 +298,7 @@ export default function SocialMediaMarketing() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Contact us today to discuss your social media marketing needs and get a free consultation.
+                  Contact us today to discuss your social media needs and get a free consultation.
                 </p>
               </div>
             </div>
@@ -335,7 +336,11 @@ export default function SocialMediaMarketing() {
                       <label htmlFor="message" className="text-sm font-medium leading-none">
                         Message
                       </label>
-                      <Textarea id="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
+                      <Textarea
+                        id="message"
+                        placeholder="Tell us about your social media goals..."
+                        className="min-h-[120px]"
+                      />
                     </div>
                     <Button
                       type="submit"
@@ -353,4 +358,3 @@ export default function SocialMediaMarketing() {
     </div>
   )
 }
-

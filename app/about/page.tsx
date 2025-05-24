@@ -1,10 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { TextReveal } from "@/components/text-reveal";
-import { MovingBorder } from "@/components/moving-border";
-import { WhatsAppButton } from "@/components/whatsapp-button";
-import { BackButton } from "@/components/back-button";
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { TextReveal } from "@/components/text-reveal"
+import { MovingBorder } from "@/components/moving-border"
+import { WhatsAppButton } from "@/components/whatsapp-button"
+import { BackButton } from "@/components/back-button"
 
 export default function About() {
   return (
@@ -23,26 +23,23 @@ export default function About() {
                     About Us
                   </div>
                   <TextReveal
-                    text="The viral alchemy Story"
+                    text="The Viral Alchemy Story"
                     className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                   />
                   <p className="text-muted-foreground md:text-xl">
-                    Founded in 2018, viral alchemy was born from a passion for
-                    helping brands navigate the ever-evolving digital landscape.
+                    Founded in 2018, Viral Alchemy was born from a passion for helping brands navigate the ever-evolving
+                    digital landscape.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Our team of digital marketing experts combines creativity
-                    with data-driven strategies to deliver exceptional results
-                    for our clients. We believe in transparency, collaboration,
-                    and continuous innovation.
+                    Our team of digital marketing experts combines creativity with data-driven strategies to deliver
+                    exceptional results for our clients. We believe in transparency, collaboration, and continuous
+                    innovation.
                   </p>
                   <p className="text-muted-foreground">
-                    What sets us apart is our commitment to understanding your
-                    business goals and crafting tailored solutions that drive
-                    real growth. We don't just execute campaigns; we build
-                    lasting partnerships.
+                    What sets us apart is our commitment to understanding your business goals and crafting tailored
+                    solutions that drive real growth. We don't just execute campaigns; we build lasting partnerships.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -50,8 +47,8 @@ export default function About() {
                     <Link href="/join-our-team">Work With Us</Link>
                   </Button>
                   <WhatsAppButton
-                    phoneNumber="+917501411769"
-                    message="Hello, I'd like to learn more about viral alchemy's services!"
+                    phoneNumber="+917074225593"
+                    message="Hello, I'd like to learn more about Viral Alchemy's services!"
                   />
                 </div>
               </div>
@@ -82,30 +79,24 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  We're on a mission to help brands stand out in the crowded
-                  digital landscape through strategic marketing alchemy.
+                  We're on a mission to help brands stand out in the crowded digital landscape through strategic
+                  marketing alchemy.
                 </p>
               </div>
             </div>
             <div className="mx-auto max-w-3xl py-12">
               <div className="space-y-6 text-center">
                 <p className="text-lg">
-                  At viral alchemy, we believe that exceptional digital
-                  marketing is both an art and a science. It requires
-                  creativity, strategic thinking, and data-driven decision
-                  making.
+                  At Viral Alchemy, we believe that exceptional digital marketing is both an art and a science. It
+                  requires creativity, strategic thinking, and data-driven decision making.
                 </p>
                 <p className="text-lg">
-                  Our mission is to transform ordinary brands into extraordinary
-                  digital experiences by combining these elements in perfect
-                  harmony - just like alchemists of old transformed base metals
-                  into gold.
+                  Our mission is to transform ordinary brands into extraordinary digital experiences by combining these
+                  elements in perfect harmony - just like alchemists of old transformed base metals into gold.
                 </p>
                 <p className="text-lg">
-                  We're committed to staying at the forefront of digital
-                  marketing trends and technologies, continuously evolving our
-                  strategies to help our clients achieve remarkable results in
-                  an ever-changing landscape.
+                  We're committed to staying at the forefront of digital marketing trends and technologies, continuously
+                  evolving our strategies to help our clients achieve remarkable results in an ever-changing landscape.
                 </p>
               </div>
             </div>
@@ -124,8 +115,7 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  Our core values guide everything we do and shape our company
-                  culture.
+                  Our core values guide everything we do and shape our company culture.
                 </p>
               </div>
             </div>
@@ -149,8 +139,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold tracking-wide">Innovation</h3>
                 <p className="text-muted-foreground">
-                  We embrace new ideas and technologies to stay ahead of the
-                  curve.
+                  We embrace new ideas and technologies to stay ahead of the curve.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
@@ -173,8 +162,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold tracking-wide">Integrity</h3>
                 <p className="text-muted-foreground">
-                  We operate with honesty, transparency, and ethical standards
-                  in all we do.
+                  We operate with honesty, transparency, and ethical standards in all we do.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
@@ -197,12 +185,8 @@ export default function About() {
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">
-                  Collaboration
-                </h3>
-                <p className="text-muted-foreground">
-                  We believe in the power of teamwork and diverse perspectives.
-                </p>
+                <h3 className="text-xl font-bold tracking-wide">Collaboration</h3>
+                <p className="text-muted-foreground">We believe in the power of teamwork and diverse perspectives.</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
@@ -222,161 +206,7 @@ export default function About() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold tracking-wide">Excellence</h3>
-                <p className="text-muted-foreground">
-                  We strive for the highest quality in everything we deliver.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="team" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Our Team
-                </div>
-                <TextReveal
-                  text="Meet the Alchemists"
-                  className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
-                />
-                <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  The creative minds and strategic thinkers behind viral
-                  alchemy.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="Sarah Johnson"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">Sarah Johnson</h3>
-                  <p className="text-sm text-muted-foreground">Founder & CEO</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="Michael Chen"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">Michael Chen</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Creative Director
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="Olivia Rodriguez"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">Olivia Rodriguez</h3>
-                  <p className="text-sm text-muted-foreground">
-                    SEO Specialist
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="David Kim"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">David Kim</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Social Media Manager
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="Emma Wilson"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">Emma Wilson</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Content Strategist
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1974&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="James Thompson"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">James Thompson</h3>
-                  <p className="text-sm text-muted-foreground">Web Developer</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="Sophia Garcia"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">Sophia Garcia</h3>
-                  <p className="text-sm text-muted-foreground">
-                    PPC Specialist
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="overflow-hidden rounded-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop"
-                    width={200}
-                    height={200}
-                    alt="Alex Patel"
-                    className="aspect-square object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold">Alex Patel</h3>
-                  <p className="text-sm text-muted-foreground">Data Analyst</p>
-                </div>
+                <p className="text-muted-foreground">We strive for the highest quality in everything we deliver.</p>
               </div>
             </div>
           </div>
@@ -394,8 +224,7 @@ export default function About() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl mx-auto">
-                  We're always looking for talented individuals to join our
-                  growing team.
+                  We're always looking for talented individuals to join our growing team.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row mt-6">
@@ -415,5 +244,5 @@ export default function About() {
         </section>
       </main>
     </div>
-  );
+  )
 }

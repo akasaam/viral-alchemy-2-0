@@ -5,13 +5,13 @@ import { PhoneIcon as WhatsappIcon } from "lucide-react"
 import { motion } from "framer-motion"
 
 interface WhatsAppButtonProps {
-  phoneNumber: string
+  phoneNumber?: string
   message?: string
   className?: string
 }
 
 export function WhatsAppButton({
-  phoneNumber,
+  phoneNumber = "+917074225593",
   message = "Hello, I'm interested in your services!",
   className,
 }: WhatsAppButtonProps) {
@@ -33,4 +33,3 @@ export function WhatsAppButton({
     </motion.div>
   )
 }
-

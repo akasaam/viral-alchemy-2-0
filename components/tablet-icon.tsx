@@ -17,4 +17,3 @@ export const Tablet = (props: LucideProps) => (
     <line x1="12" x2="12.01" y1="18" y2="18" />
   </svg>
 )
-

@@ -1,55 +1,45 @@
-"use client";
+"use client"
 
-import type React from "react";
+import type React from "react"
 
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight, CheckCircle, Mail, MapPin, Phone } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { TextReveal } from "@/components/text-reveal";
-import { MovingBorder } from "@/components/moving-border";
-import {
-  HorizontalScroll,
-  HorizontalScrollItem,
-} from "@/components/horizontal-scroll";
-import { WhatsAppButton } from "@/components/whatsapp-button";
-import { ServicesDropdown } from "@/components/services-dropdown";
-import { useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { ArrowRight, CheckCircle, Mail, MapPin, Phone } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { TextReveal } from "@/components/text-reveal"
+import { MovingBorder } from "@/components/moving-border"
+import { HorizontalScroll, HorizontalScrollItem } from "@/components/horizontal-scroll"
+import { WhatsAppButton } from "@/components/whatsapp-button"
+import { ServicesDropdown } from "@/components/services-dropdown"
+import { useState } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.05], [1, 0.97]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { scrollYProgress } = useScroll()
+  const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0])
+  const scale = useTransform(scrollYProgress, [0, 0.05], [1, 0.97])
 
   // Handle form submission to WhatsApp
   const handleContactSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const firstName = formData.get("first-name");
-    const lastName = formData.get("last-name");
-    const email = formData.get("email");
-    const company = formData.get("company");
-    const message = formData.get("message");
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    const firstName = formData.get("first-name")
+    const lastName = formData.get("last-name")
+    const email = formData.get("email")
+    const company = formData.get("company")
+    const message = formData.get("message")
 
     const whatsappMessage = encodeURIComponent(
-      `Name: ${firstName} ${lastName}\nEmail: ${email}\nCompany: ${company}\nMessage: ${message}`
-    );
+      `Name: ${firstName} ${lastName}\nEmail: ${email}\nCompany: ${company}\nMessage: ${message}`,
+    )
 
-    window.open(`https://wa.me/917501411769?text=${whatsappMessage}`, "_blank");
-  };
+    window.open(`https://wa.me/917501411769?text=${whatsappMessage}`, "_blank")
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -57,31 +47,20 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
-              <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
-                VA
-              </div>
+              <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">VA</div>
             </div>
-            <span className="text-xl font-bold">viral alchemy</span>
+            <span className="text-xl font-bold">Viral Alchemy</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <ServicesDropdown />
 
-            <Link
-              href="/case-studies"
-              className="text-sm font-medium hover:text-primary"
-            >
+            <Link href="/case-studies" className="text-sm font-medium hover:text-primary">
               Case Studies
             </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium hover:text-primary"
-            >
+            <Link href="/about" className="text-sm font-medium hover:text-primary">
               About
             </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium hover:text-primary"
-            >
+            <Link href="/contact" className="text-sm font-medium hover:text-primary">
               Contact
             </Link>
           </nav>
@@ -90,12 +69,7 @@ export default function Home() {
             <Button asChild className="hidden md:inline-flex">
               <Link href="#contact">Get Started</Link>
             </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
+            <Button variant="outline" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <span className="sr-only">Toggle menu</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -177,8 +151,7 @@ export default function Home() {
                     className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none tracking-wide"
                   />
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    We turn ordinary brands into extraordinary digital
-                    experiences through strategic marketing alchemy.
+                    We turn ordinary brands into extraordinary digital experiences through strategic marketing alchemy.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -210,10 +183,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="services"
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
-        >
+        <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -225,38 +195,34 @@ export default function Home() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  We offer a comprehensive suite of digital marketing services
-                  to help your brand stand out in the digital landscape.
+                  We offer a comprehensive suite of digital marketing services to help your brand stand out in the
+                  digital landscape.
                 </p>
               </div>
             </div>
 
-            <div className="mx-auto grid max-w-1xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
-              <motion.div
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
+            <div className="mx-auto grid max-w-1xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-5">
+              <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                 <Card className="relative overflow-hidden h-[400px]  hover:bg-gray-200/15 flex flex-col w-full">
                   <CardHeader>
-                    <CardTitle>Social Media Marketing</CardTitle>
+                    <CardTitle>Social Media</CardTitle>
                     <CardDescription>
-                      Engage your audience build brand loyalty through strategic
-                      social campaigns.
+                      Build your brand presence and engage your audience across all social platforms.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="grid gap-2">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Content Strategy</span>
+                        <span>Content Creation</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Community Building</span>
+                        <span>Community Management</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Paid Social Campaigns</span>
+                        <span>Platform Strategy</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
@@ -270,113 +236,142 @@ export default function Home() {
                   </CardContent>
                   <CardFooter className="mt-auto">
                     <Button variant="outline" className="w-full" asChild>
-                      <Link href="/social-media-marketing">
+                      <Link href="/social-media">
                         Learn More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </CardFooter>
                 </Card>
               </motion.div>
-              <motion.div
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
+              <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                 <Card className="relative overflow-hidden h-[400px] hover:bg-gray-200/15  flex flex-col w-full">
                   <CardHeader>
-                    <CardTitle>Search Engine Optimization</CardTitle>
+                    <CardTitle>Graphics Design</CardTitle>
                     <CardDescription>
-                      Improve your visibility and drive organic traffic with our
-                      data-driven SEO strategies.
+                      Create stunning visual content that captures attention and communicates your brand message.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="grid gap-2">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Keyword Research</span>
+                        <span>Logo Design</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>On-Page Optimization</span>
+                        <span>Brand Identity</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Link Building</span>
+                        <span>Marketing Materials</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Technical SEO Audits</span>
+                        <span>Social Media Graphics</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Local SEO Strategies</span>
+                        <span>Print Design</span>
                       </li>
                     </ul>
                   </CardContent>
                   <CardFooter className="mt-auto">
                     <Button variant="outline" className="w-full" asChild>
-                      <Link href="/search-engine-optimization">
+                      <Link href="/graphics-design">
                         Learn More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </CardFooter>
                 </Card>
               </motion.div>
-              <motion.div
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
+              <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                 <Card className="relative overflow-hidden h-[400px] hover:bg-gray-200/15  flex flex-col w-full">
                   <CardHeader>
-                    <CardTitle>Content Marketing</CardTitle>
+                    <CardTitle>Video Editing</CardTitle>
                     <CardDescription>
-                      Tell your brand story and establish compelling content
-                      that converts.
+                      Professional video editing services that bring your stories to life with impact.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="grid gap-2">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Blog Writing</span>
+                        <span>Promotional Videos</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Email Campaigns</span>
+                        <span>Social Media Content</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Video Production</span>
+                        <span>Motion Graphics</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Infographics & Visuals</span>
+                        <span>Color Correction</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Content Strategy</span>
+                        <span>Audio Enhancement</span>
                       </li>
                     </ul>
                   </CardContent>
                   <CardFooter className="mt-auto">
                     <Button variant="outline" className="w-full" asChild>
-                      <Link href="/content-marketing">
+                      <Link href="/video-editing">
                         Learn More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </CardFooter>
                 </Card>
               </motion.div>
-              <motion.div
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
+              <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                 <Card className="relative overflow-hidden h-[400px] hover:bg-gray-200/15  flex flex-col w-full">
                   <CardHeader>
-                    <CardTitle>Website Development</CardTitle>
+                    <CardTitle>Meta Ads</CardTitle>
                     <CardDescription>
-                      Create stunning, high-performance websites that drive
-                      results for your business.
+                      Drive targeted traffic and conversions with strategic Facebook and Instagram advertising.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <ul className="grid gap-2">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>Campaign Strategy</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>Audience Targeting</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>Ad Creative Design</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>Performance Optimization</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>ROI Tracking</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                  <CardFooter className="mt-auto">
+                    <Button variant="outline" className="w-full" asChild>
+                      <Link href="/meta-ads">
+                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </motion.div>
+              <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                <Card className="relative overflow-hidden h-[400px] hover:bg-gray-200/15  flex flex-col w-full">
+                  <CardHeader>
+                    <CardTitle>Web Development</CardTitle>
+                    <CardDescription>
+                      Create stunning, high-performance websites that drive results for your business.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
@@ -391,11 +386,11 @@ export default function Home() {
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>CMS Implementation</span>
+                        <span>Responsive Design</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
-                        <span>Responsive Design</span>
+                        <span>SEO Optimization</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-primary" />
@@ -405,7 +400,7 @@ export default function Home() {
                   </CardContent>
                   <CardFooter className="mt-auto">
                     <Button variant="outline" className="w-full" asChild>
-                      <Link href="/website-development">
+                      <Link href="/web-development">
                         Learn More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
@@ -428,8 +423,7 @@ export default function Home() {
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  See how we've helped brands like yours achieve remarkable
-                  results in the digital space.
+                  See how we've helped brands like yours achieve remarkable results in the digital space.
                 </p>
               </div>
               <Button variant="outline" className="mt-4" asChild>
@@ -452,16 +446,13 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle>TechNova Rebrand</CardTitle>
                     <CardDescription>
-                      How we helped a tech startup increase their conversion
-                      rate by 150% through strategic rebranding.
+                      How we helped a tech startup increase their conversion rate by 150% through strategic rebranding.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      TechNova was struggling to stand out in a crowded market.
-                      We developed a comprehensive rebranding strategy that
-                      included a new visual identity, messaging framework, and
-                      digital presence.
+                      TechNova was struggling to stand out in a crowded market. We developed a comprehensive rebranding
+                      strategy that included a new visual identity, messaging framework, and digital presence.
                     </p>
                   </CardContent>
                   <CardFooter>
@@ -485,16 +476,13 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle>EcoLife Social Campaign</CardTitle>
                     <CardDescription>
-                      How we helped a sustainable lifestyle brand increase their
-                      social media engagement by 200%.
+                      How we helped a sustainable lifestyle brand increase their social media engagement by 200%.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      EcoLife wanted to expand their reach and connect with
-                      environmentally conscious consumers. We developed a
-                      multi-platform social media strategy that resonated with
-                      their target audience.
+                      EcoLife wanted to expand their reach and connect with environmentally conscious consumers. We
+                      developed a multi-platform social media strategy that resonated with their target audience.
                     </p>
                   </CardContent>
                   <CardFooter>
@@ -518,16 +506,15 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle>Luxury Brand Campaign</CardTitle>
                     <CardDescription>
-                      How we helped a luxury fashion brand increase online sales
-                      by 120% through targeted digital marketing.
+                      How we helped a luxury fashion brand increase online sales by 120% through targeted digital
+                      marketing.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      This luxury brand needed to transition from traditional
-                      marketing to digital channels without losing their premium
-                      positioning. We created a strategy that maintained their
-                      exclusive brand image.
+                      This luxury brand needed to transition from traditional marketing to digital channels without
+                      losing their premium positioning. We created a strategy that maintained their exclusive brand
+                      image.
                     </p>
                   </CardContent>
                   <CardFooter>
@@ -551,15 +538,13 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle>SaaS Growth Strategy</CardTitle>
                     <CardDescription>
-                      How we helped a B2B SaaS company increase lead generation
-                      by 180% through content marketing.
+                      How we helped a B2B SaaS company increase lead generation by 180% through content marketing.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      This SaaS company was struggling to generate quality
-                      leads. We developed a comprehensive content strategy that
-                      positioned them as thought leaders in their industry.
+                      This SaaS company was struggling to generate quality leads. We developed a comprehensive content
+                      strategy that positioned them as thought leaders in their industry.
                     </p>
                   </CardContent>
                   <CardFooter>
@@ -573,10 +558,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="about"
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
-        >
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
@@ -585,26 +567,23 @@ export default function Home() {
                     About Us
                   </div>
                   <TextReveal
-                    text="The viral alchemy Story"
+                    text="The Viral Alchemy Story"
                     className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                   />
                   <p className="text-muted-foreground md:text-xl">
-                    Founded in 2018, viral alchemy was born from a passion for
-                    helping brands navigate the ever-evolving digital landscape.
+                    Founded in 2018, Viral Alchemy was born from a passion for helping brands navigate the ever-evolving
+                    digital landscape.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Our team of digital marketing experts combines creativity
-                    with data-driven strategies to deliver exceptional results
-                    for our clients. We believe in transparency, collaboration,
-                    and continuous innovation.
+                    Our team of digital marketing experts combines creativity with data-driven strategies to deliver
+                    exceptional results for our clients. We believe in transparency, collaboration, and continuous
+                    innovation.
                   </p>
                   <p className="text-muted-foreground">
-                    What sets us apart is our commitment to understanding your
-                    business goals and crafting tailored solutions that drive
-                    real growth. We don't just execute campaigns; we build
-                    lasting partnerships.
+                    What sets us apart is our commitment to understanding your business goals and crafting tailored
+                    solutions that drive real growth. We don't just execute campaigns; we build lasting partnerships.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -631,120 +610,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="team" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <TextReveal
-                  text="Meet Our Team"
-                  className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
-                />
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  The creative minds and strategic thinkers behind viral
-                  alchemy.
-                </p>
-              </div>
-              <Button variant="outline" className="mt-4" asChild>
-                <Link href="/about#team">View Full Team</Link>
-              </Button>
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="flex flex-col items-center space-y-2">
-                  <div className="overflow-hidden rounded-full">
-                    <Image
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop"
-                      width={200}
-                      height={200}
-                      alt="Sarah Johnson"
-                      className="aspect-square object-cover"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="font-bold">Sarah Johnson</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Founder & CEO
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="flex flex-col items-center space-y-2">
-                  <div className="overflow-hidden rounded-full">
-                    <Image
-                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
-                      width={200}
-                      height={200}
-                      alt="Michael Chen"
-                      className="aspect-square object-cover"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="font-bold">Michael Chen</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Creative Director
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="flex flex-col items-center space-y-2">
-                  <div className="overflow-hidden rounded-full">
-                    <Image
-                      src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
-                      width={200}
-                      height={200}
-                      alt="Olivia Rodriguez"
-                      className="aspect-square object-cover"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="font-bold">Olivia Rodriguez</h3>
-                    <p className="text-sm text-muted-foreground">
-                      SEO Specialist
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="flex flex-col items-center space-y-2">
-                  <div className="overflow-hidden rounded-full">
-                    <Image
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
-                      width={200}
-                      height={200}
-                      alt="David Kim"
-                      className="aspect-square object-cover"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="font-bold">David Kim</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Social Media Manager
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+       
 
-        <section
-          id="contact"
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
-        >
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
@@ -757,32 +625,28 @@ export default function Home() {
                     className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                   />
                   <p className="text-muted-foreground md:text-xl">
-                    Ready to take your brand to the next level? Get in touch
-                    with our team to discuss your digital marketing needs.
+                    Ready to take your brand to the next level? Get in touch with our team to discuss your digital
+                    marketing needs.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-primary" />
-                    <p className="text-muted-foreground">
-                      Siliguri, West Bengal, India
-                    </p>
+                    <p className="text-muted-foreground">Siliguri, West Bengal, India</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail className="h-5 w-5 text-primary" />
-                    <p className="text-muted-foreground">
-                      saambarlin@gmail.com
-                    </p>
+                    <p className="text-muted-foreground">saambarlin@gmail.com</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-5 w-5 text-primary" />
-                    <p className="text-muted-foreground">+91 7501411769</p>
+                    <p className="text-muted-foreground">+91 7074225593</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <WhatsAppButton
-                    phoneNumber="+917501411769"
-                    message="Hello, I'd like to discuss working with viral alchemy!"
+                    phoneNumber="+917074225593"
+                    message="Hello, I'd like to discuss working with Viral Alchemy!"
                     className="w-full md:w-auto"
                   />
                   <Button variant="outline" asChild>
@@ -791,8 +655,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 p-4 border rounded-lg bg-muted/30">
                   <p className="text-center text-muted-foreground">
-                    KholaChand Fapri, Bypass Road army camp road, near hathway
-                    cable store, Siliguri, West Bengal 734008
+                    KholaChand Fapri, Bypass Road army camp road, near hathway cable store, Siliguri, West Bengal 734008
                   </p>
                 </div>
               </div>
@@ -801,8 +664,7 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle>Send Us a Message</CardTitle>
                     <CardDescription>
-                      Fill out the form below and we'll get back to you as soon
-                      as possible.
+                      Fill out the form below and we'll get back to you as soon as possible.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -815,12 +677,7 @@ export default function Home() {
                           >
                             First Name
                           </label>
-                          <Input
-                            id="first-name"
-                            name="first-name"
-                            placeholder="John"
-                            required
-                          />
+                          <Input id="first-name" name="first-name" placeholder="John" required />
                         </div>
                         <div className="space-y-2">
                           <label
@@ -829,12 +686,7 @@ export default function Home() {
                           >
                             Last Name
                           </label>
-                          <Input
-                            id="last-name"
-                            name="last-name"
-                            placeholder="Doe"
-                            required
-                          />
+                          <Input id="last-name" name="last-name" placeholder="Doe" required />
                         </div>
                       </div>
                       <div className="space-y-2">
@@ -844,13 +696,7 @@ export default function Home() {
                         >
                           Email
                         </label>
-                        <Input
-                          id="email"
-                          name="email"
-                          placeholder="john.doe@example.com"
-                          type="email"
-                          required
-                        />
+                        <Input id="email" name="email" placeholder="john.doe@example.com" type="email" required />
                       </div>
                       <div className="space-y-2">
                         <label
@@ -859,11 +705,7 @@ export default function Home() {
                         >
                           Company
                         </label>
-                        <Input
-                          id="company"
-                          name="company"
-                          placeholder="Acme Inc."
-                        />
+                        <Input id="company" name="company" placeholder="Acme Inc." />
                       </div>
                       <div className="space-y-2">
                         <label
@@ -898,36 +740,25 @@ export default function Home() {
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex items-center gap-2">
             <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-purple-500 to-pink-500">
-              <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
-                VA
-              </div>
+              <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">VA</div>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} viral alchemy. All rights reserved.
+              © {new Date().getFullYear()} Viral Alchemy. All rights reserved.
             </p>
           </div>
           <nav className="flex gap-4 sm:gap-6">
-            <Link
-              href="/privacy-policy"
-              className="text-sm font-medium hover:underline underline-offset-4"
-            >
+            <Link href="/privacy-policy" className="text-sm font-medium hover:underline underline-offset-4">
               Privacy Policy
             </Link>
-            <Link
-              href="/terms-of-service"
-              className="text-sm font-medium hover:underline underline-offset-4"
-            >
+            <Link href="/terms-of-service" className="text-sm font-medium hover:underline underline-offset-4">
               Terms of Service
             </Link>
-            <Link
-              href="/sitemap"
-              className="text-sm font-medium hover:underline underline-offset-4"
-            >
+            <Link href="/sitemap" className="text-sm font-medium hover:underline underline-offset-4">
               Sitemap
             </Link>
           </nav>
         </div>
       </footer>
     </div>
-  );
+  )
 }

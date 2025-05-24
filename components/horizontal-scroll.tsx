@@ -46,4 +46,3 @@ export function HorizontalScroll({ children, className }: HorizontalScrollProps)
 export function HorizontalScrollItem({ children, className }: { children: React.ReactNode; className?: string }) {
   return <div className={cn("h-full w-[320px] md:w-[400px] px-4 flex-shrink-0", className)}>{children}</div>
 }
-

@@ -116,4 +116,3 @@ export default function InquiryPopup({ whatsappNumber, email }: InquiryPopupProp
     </>
   )
 }
-

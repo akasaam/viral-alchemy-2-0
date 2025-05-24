@@ -4,13 +4,13 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Search, BarChart, Globe, LineChart } from "lucide-react"
+import { CheckCircle, Target, BarChart3, Users, TrendingUp } from "lucide-react"
 import { TextReveal } from "@/components/text-reveal"
 import { MovingBorder } from "@/components/moving-border"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { BackButton } from "@/components/back-button"
 
-export default function SearchEngineOptimization() {
+export default function MetaAds() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
@@ -24,11 +24,11 @@ export default function SearchEngineOptimization() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <TextReveal
-                    text="Search Engine Optimization"
+                    text="Meta Ads Management"
                     className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none tracking-wide"
                   />
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Improve your visibility and drive organic traffic with our data-driven SEO strategies.
+                    Drive targeted traffic and conversions with strategic Facebook and Instagram advertising campaigns.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -39,16 +39,19 @@ export default function SearchEngineOptimization() {
                   >
                     <Link href="#contact">Get Started</Link>
                   </Button>
-                  <WhatsAppButton phoneNumber="+917501411769" message="Hello, I'm interested in your SEO services!" />
+                  <WhatsAppButton
+                    phoneNumber="+917501411769"
+                    message="Hello, I'm interested in your Meta Ads services!"
+                  />
                 </div>
               </div>
               <div className="flex items-center justify-center">
                 <MovingBorder className="p-1">
                   <Image
-                    src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=2074&auto=format&fit=crop"
                     width={550}
                     height={550}
-                    alt="Search Engine Optimization"
+                    alt="Meta Ads Management"
                     className="rounded-lg object-cover"
                     priority
                   />
@@ -63,15 +66,15 @@ export default function SearchEngineOptimization() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Our Approach
+                  Our Services
                 </div>
                 <TextReveal
-                  text="Comprehensive SEO Solutions"
+                  text="Strategic Meta Advertising"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  We create tailored SEO strategies that improve your search rankings and drive qualified traffic to
-                  your website.
+                  We create and manage high-performing Facebook and Instagram ad campaigns that deliver measurable
+                  results.
                 </p>
               </div>
             </div>
@@ -79,38 +82,38 @@ export default function SearchEngineOptimization() {
               <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
                 <CardHeader className="pb-4">
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Search className="h-6 w-6 text-primary" />
+                    <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Keyword Research</CardTitle>
+                  <CardTitle>Campaign Strategy</CardTitle>
                   <CardDescription>
-                    Identify high-value keywords that your target audience is searching for.
+                    Develop comprehensive advertising strategies aligned with your business objectives.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Competitor Analysis</span>
+                      <span>Goal Setting</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Search Volume Analysis</span>
+                      <span>Budget Planning</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Long-tail Opportunities</span>
+                      <span>Campaign Structure</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Intent Mapping</span>
+                      <span>Bidding Strategy</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Keyword Difficulty Assessment</span>
+                      <span>Timeline Planning</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Seasonal Trend Analysis</span>
+                      <span>KPI Definition</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -118,38 +121,38 @@ export default function SearchEngineOptimization() {
               <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
                 <CardHeader className="pb-4">
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Globe className="h-6 w-6 text-primary" />
+                    <Users className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>On-Page SEO</CardTitle>
+                  <CardTitle>Audience Targeting</CardTitle>
                   <CardDescription>
-                    Optimize your website content and structure for better search visibility.
+                    Precise audience targeting to reach the right people at the right time.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Content Optimization</span>
+                      <span>Custom Audiences</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Meta Tag Optimization</span>
+                      <span>Lookalike Audiences</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>URL Structure</span>
+                      <span>Interest Targeting</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Internal Linking</span>
+                      <span>Behavioral Targeting</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Header Tag Optimization</span>
+                      <span>Retargeting</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Image Optimization</span>
+                      <span>Demographic Filters</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -157,38 +160,36 @@ export default function SearchEngineOptimization() {
               <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
                 <CardHeader className="pb-4">
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <LineChart className="h-6 w-6 text-primary" />
+                    <TrendingUp className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Technical SEO</CardTitle>
-                  <CardDescription>
-                    Improve your website's technical foundation for better search performance.
-                  </CardDescription>
+                  <CardTitle>Ad Creative Design</CardTitle>
+                  <CardDescription>Compelling ad creatives that capture attention and drive action.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Site Speed Optimization</span>
+                      <span>Image Ads</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Mobile Optimization</span>
+                      <span>Video Ads</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Schema Markup</span>
+                      <span>Carousel Ads</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>XML Sitemaps</span>
+                      <span>Collection Ads</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Robots.txt Optimization</span>
+                      <span>Story Ads</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Canonical Tag Implementation</span>
+                      <span>A/B Testing</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -196,38 +197,36 @@ export default function SearchEngineOptimization() {
               <Card className="flex flex-col h-[400px] w-[300px] hover:bg-gray-200/15">
                 <CardHeader className="pb-4">
                   <div className="mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <BarChart className="h-6 w-6 text-primary" />
+                    <BarChart3 className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>SEO Analytics</CardTitle>
-                  <CardDescription>
-                    Track and analyze your SEO performance to continuously improve results.
-                  </CardDescription>
+                  <CardTitle>Performance Optimization</CardTitle>
+                  <CardDescription>Continuous monitoring and optimization for maximum ROI.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="grid gap-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Ranking Reports</span>
+                      <span>Real-time Monitoring</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Traffic Analysis</span>
+                      <span>Performance Analysis</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Conversion Tracking</span>
+                      <span>Budget Optimization</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Competitor Monitoring</span>
+                      <span>ROI Tracking</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Performance Reporting</span>
+                      <span>Detailed Reporting</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>ROI Measurement</span>
+                      <span>Strategic Adjustments</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -244,11 +243,11 @@ export default function SearchEngineOptimization() {
                   Our Process
                 </div>
                 <TextReveal
-                  text="How We Improve Your Search Rankings"
+                  text="How We Drive Results with Meta Ads"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Our proven SEO process ensures your website ranks higher and attracts more qualified traffic.
+                  Our proven Meta advertising process ensures maximum return on your advertising investment.
                 </p>
               </div>
             </div>
@@ -257,36 +256,36 @@ export default function SearchEngineOptimization() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   1
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Audit</h3>
+                <h3 className="text-xl font-bold tracking-wide">Research</h3>
                 <p className="text-muted-foreground">
-                  We analyze your website, competitors, and target keywords to develop a strategic plan.
+                  We analyze your business, competitors, and target audience to develop a winning strategy.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   2
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Optimize</h3>
+                <h3 className="text-xl font-bold tracking-wide">Setup</h3>
                 <p className="text-muted-foreground">
-                  We implement on-page and technical SEO improvements to enhance your search visibility.
+                  We create and configure your campaigns with precise targeting and compelling ad creatives.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   3
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Build</h3>
+                <h3 className="text-xl font-bold tracking-wide">Launch</h3>
                 <p className="text-muted-foreground">
-                  We develop high-quality content and build authoritative backlinks to boost your domain authority.
+                  We launch your campaigns and monitor performance closely to ensure optimal results.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   4
                 </div>
-                <h3 className="text-xl font-bold tracking-wide">Measure</h3>
+                <h3 className="text-xl font-bold tracking-wide">Optimize</h3>
                 <p className="text-muted-foreground">
-                  We continuously monitor performance, providing detailed reports and optimizing for better results.
+                  We continuously optimize campaigns based on data insights to maximize your ROI.
                 </p>
               </div>
             </div>
@@ -301,11 +300,11 @@ export default function SearchEngineOptimization() {
                   Get Started
                 </div>
                 <TextReveal
-                  text="Ready to Improve Your Search Rankings?"
+                  text="Ready to Scale Your Business with Meta Ads?"
                   className="text-3xl font-bold tracking-tighter md:text-4xl/tight tracking-wide"
                 />
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Contact us today to discuss your SEO needs and get a free website audit.
+                  Contact us today to discuss your advertising goals and get a free campaign audit.
                 </p>
               </div>
             </div>
@@ -340,16 +339,20 @@ export default function SearchEngineOptimization() {
                       <Input id="email" placeholder="john.doe@example.com" type="email" />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="website" className="text-sm font-medium leading-none">
-                        Website URL
+                      <label htmlFor="budget" className="text-sm font-medium leading-none">
+                        Monthly Ad Budget
                       </label>
-                      <Input id="website" placeholder="https://example.com" type="url" />
+                      <Input id="budget" placeholder="$1000" />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="message" className="text-sm font-medium leading-none">
                         Message
                       </label>
-                      <Textarea id="message" placeholder="Tell us about your SEO goals..." className="min-h-[120px]" />
+                      <Textarea
+                        id="message"
+                        placeholder="Tell us about your advertising goals..."
+                        className="min-h-[120px]"
+                      />
                     </div>
                     <Button
                       type="submit"
@@ -367,4 +370,3 @@ export default function SearchEngineOptimization() {
     </div>
   )
 }
-

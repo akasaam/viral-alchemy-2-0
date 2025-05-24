@@ -44,4 +44,3 @@ export function DataTable<T>({ data, columns }: DataTableProps<T>) {
     </div>
   )
 }
-

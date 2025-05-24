@@ -215,4 +215,3 @@ export async function fetchAnalyticsData(): Promise<AnalyticsData> {
     lastUpdated: new Date().toISOString(),
   }
 }
-
